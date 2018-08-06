@@ -150,6 +150,13 @@ PRODUCT_PACKAGES += \
 # IR
 PRODUCT_PACKAGES += \
 
+# Custom off-mode charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images \
+    font_log.png \
+    libhealthd.cm
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
