@@ -17,12 +17,15 @@
 $(call inherit-product, device/cmdc/taco/full_taco.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_taco
+PRODUCT_NAME := liquid_taco
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="phenom87 (venkysai)"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taco \
